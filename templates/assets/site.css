@@ -214,5 +214,26 @@ ol.steps .ds-code{margin-top:var(--s-3)}
 .carousel-caption span{color:var(--c-gray-1200);font-weight:var(--fw-semibold)}
 .carousel-count{color:var(--c-gray-1000);font-family:var(--stack-mono);font-size:var(--t-13);font-style:normal;white-space:nowrap;font-variant-numeric:tabular-nums}
 .track:focus-visible{outline:2px solid var(--c-sky-600);outline-offset:2px}
+
+/* ---------------------------------------------------------------- Showcase card grid (individual clickable items) */
+.showcase-grid{display:grid;grid-template-columns:1fr;gap:var(--s-6);margin:var(--s-8) 0 var(--s-16);padding:0;list-style:none}
+@media(min-width:640px){.showcase-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1024px){.showcase-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.showcase-card{display:flex;flex-direction:column;border:1px solid var(--c-preview-border);border-radius:var(--r-4);background:var(--c-gray-100);overflow:hidden;transition:border-color var(--dur-fast) var(--ease-out),box-shadow var(--dur-fast) var(--ease-out)}
+.showcase-card:hover{border-color:var(--c-gray-500);box-shadow:var(--shadow-custom-hover)}
+.showcase-card-stage{aspect-ratio:16/9;overflow:hidden;background:var(--c-gray-200);position:relative}
+.showcase-card-stage a{display:block;width:100%;height:100%}
+.showcase-card-stage img{display:block;width:100%;height:100%;object-fit:cover;transition:transform var(--dur-base) var(--ease-out)}
+.showcase-card:hover .showcase-card-stage img{transform:scale(1.02)}
+.showcase-card-body{display:flex;flex-direction:column;flex:1;padding:var(--s-4) var(--s-5) var(--s-5);gap:var(--s-2)}
+.showcase-card-meta{display:flex;align-items:center;justify-content:space-between;gap:var(--s-2);font-family:var(--stack-mono);font-size:var(--t-12);color:var(--c-gray-900);text-transform:uppercase;letter-spacing:var(--track-flat)}
+.showcase-card-title{margin:0;font-size:var(--t-16);font-weight:var(--fw-semibold);color:var(--c-gray-1200);line-height:var(--lh-heading)}
+.showcase-card-title a{color:inherit;text-decoration:none}
+.showcase-card-title a:hover{color:var(--c-accent-text)}
+.showcase-card-desc{margin:0;color:var(--c-gray-1100);font-size:var(--t-13);line-height:var(--lh-ui);flex:1}
+.showcase-card-actions{display:flex;align-items:center;gap:var(--s-4);margin-top:var(--s-3);padding-top:var(--s-3);border-top:1px solid var(--c-preview-border);font-size:var(--t-13)}
+.showcase-card-actions a{display:inline-flex;align-items:center;gap:var(--s-1);color:var(--c-gray-1200);font-weight:var(--fw-medium);text-decoration:none}
+.showcase-card-actions a:hover{color:var(--c-accent-text);text-decoration:underline}
+.showcase-card-actions a .ph{width:14px;height:14px}
 @media(prefers-reduced-motion:no-preference){.track{scroll-behavior:smooth}}
 

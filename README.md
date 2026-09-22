@@ -92,9 +92,7 @@ docs/
 
 ## Live Case Studies (design:os Reference Suite)
 
-![design:os Ecosystem Showcase Banner](images/ecosystem_showcase_master_banner.png)
-
-The 6 production implementations of this architecture across different repository categories:
+The 6 production implementations of this architecture across different repository categories (each individually accessible and directly clickable):
 
 | Preview | Repository | Category | Live Showcase & Documentation |
 | :--- | :--- | :--- | :--- |
