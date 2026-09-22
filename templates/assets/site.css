@@ -187,11 +187,12 @@ ol.steps .ds-code{margin-top:var(--s-3)}
 .prose .highlighter-rouge{margin:0 0 var(--s-8)}
 .prose .highlighter-rouge pre{margin:0}
 /* display:block so a wide register scrolls inside the column instead of widening the page. */
-.prose table{display:block;width:100%;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;border-collapse:collapse;margin:var(--s-4) 0 var(--s-12);font-size:var(--t-14);line-height:var(--lh-ui);font-variant-numeric:tabular-nums}
-.prose thead th{text-align:left;padding:var(--s-3) var(--s-4) var(--s-3) 0;color:var(--c-gray-900);font-family:var(--stack-mono);font-size:var(--t-13);font-weight:var(--fw-body);text-transform:uppercase;letter-spacing:var(--track-flat);border-bottom:1px solid var(--c-gray-300)}
-.prose tbody td{vertical-align:top;padding:var(--s-4) var(--s-4) var(--s-4) 0;color:var(--c-gray-1100)}
-.prose tbody td:first-child{color:var(--c-gray-1200);font-weight:var(--fw-medium)}
-.prose tbody tr:first-child td{padding-top:var(--s-6)}
+.ds-table,.prose table{display:block;width:100%;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin;border-collapse:collapse;margin:var(--s-4) 0 var(--s-12);font-size:var(--t-14);line-height:var(--lh-ui);font-variant-numeric:tabular-nums}
+.ds-table thead th,.prose thead th{text-align:left;padding:var(--s-3) var(--s-8) var(--s-3) 0;color:var(--c-gray-900);font-family:var(--stack-mono);font-size:var(--t-13);font-weight:var(--fw-body);text-transform:uppercase;letter-spacing:var(--track-flat);border-bottom:1px solid var(--c-gray-300)}
+.ds-table tbody td,.prose tbody td{vertical-align:top;padding:var(--s-4) var(--s-8) var(--s-4) 0;color:var(--c-gray-1100);border-bottom:1px solid var(--c-gray-300)}
+.ds-table tbody td:first-child,.prose tbody td:first-child{color:var(--c-gray-1200);font-weight:var(--fw-medium)}
+.ds-table tbody tr:first-child td,.prose tbody tr:first-child td{padding-top:var(--s-6)}
+.ds-table tbody tr:last-child td,.prose tbody tr:last-child td{border-bottom:0}
 .table-scroll{overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin}
 .doc-head{margin-bottom:var(--s-12)}
 .doc-nav{display:flex;flex-wrap:wrap;gap:var(--s-2);margin-top:var(--s-24);padding-top:var(--s-12);border-top:1px solid var(--c-gray-300)}
