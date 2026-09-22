@@ -1,0 +1,16 @@
+# design-os-github-page
+
+> Universal zero-dependency GitHub Pages template, CLI scaffolder, and 9-tier layout engine with built-in SEO, XML Sitemap, llms.txt (GEO), and Schema.org FAQPage (AEO).
+
+Author-grade GitHub Pages marketing & documentation engine for builders and AI coding agents.
+
+## Documentation
+
+- [Overview](https://jangtrinh.github.io/design-os-github-page/): Main project overview, features, and evidence.
+- [Repository](https://github.com/jangtrinh/design-os-github-page): GitHub repository, source code, and release tags.
+
+## Core Features & Architecture
+
+- **Primary Interface**: CLI and programmatic API.
+- **Verification Gates**: Rigorous automated checks with reproducible evidence.
+- **Deterministic Workflows**: Predictable outputs and contract enforcement.

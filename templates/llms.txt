@@ -1,0 +1,16 @@
+# {{REPO}}
+
+> {{META_DESCRIPTION}}
+
+{{PROPOSITION_SENTENCE}}
+
+## Documentation
+
+- [Overview](https://{{OWNER}}.github.io/{{REPO}}/): Main project overview, features, and evidence.
+- [Repository](https://github.com/{{OWNER}}/{{REPO}}): GitHub repository, source code, and release tags.
+
+## Core Features & Architecture
+
+- **Primary Interface**: CLI and programmatic API.
+- **Verification Gates**: Rigorous automated checks with reproducible evidence.
+- **Deterministic Workflows**: Predictable outputs and contract enforcement.

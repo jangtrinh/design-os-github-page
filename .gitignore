@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+.gemini/
+.claude/
+*.log
+_site/
+.jekyll-cache/
+.jekyll-metadata

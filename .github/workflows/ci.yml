@@ -1,0 +1,65 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Verify HTML5 Tag Balance
+        run: |
+          python3 -c "
+          from html.parser import HTMLParser
+          import sys, glob
+
+          class TagChecker(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.stack = []
+                  self.void_tags = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input', 'link', 'meta', 'param', 'source', 'track', 'wbr'}
+                  self.errors = []
+              def handle_starttag(self, tag, attrs):
+                  if tag not in self.void_tags: self.stack.append((tag, self.getpos()))
+              def handle_endtag(self, tag):
+                  if tag in self.void_tags: return
+                  if not self.stack:
+                      self.errors.append(f'Unexpected </{tag}> at line {self.getpos()[0]}'); return
+                  last_tag, pos = self.stack.pop()
+                  if last_tag != tag:
+                      self.errors.append(f'Mismatched tag: expected </{last_tag}> (opened line {pos[0]}), found </{tag}> at line {self.getpos()[0]}')
+
+          for target in ['docs/index.html', 'templates/index.html']:
+              with open(target, 'r', encoding='utf-8') as f:
+                  content = f.read().split('---', 2)[-1]
+              parser = TagChecker()
+              parser.feed(content)
+              if parser.errors or parser.stack:
+                  print(f'FAIL {target}:', parser.errors, parser.stack); sys.exit(1)
+              print(f'PASS: {target} tag balance 100% clean')
+          "
+
+      - name: Test Scaffolder CLI (Dry-Run Test)
+        run: |
+          python3 scripts/scaffold-repo-pages.py \
+            --owner test-owner \
+            --repo test-tool \
+            --name "TestTool" \
+            --out-dir /tmp/test-out
+          test -f /tmp/test-out/index.html
+          test -f /tmp/test-out/robots.txt
+          test -f /tmp/test-out/sitemap.xml
+          test -f /tmp/test-out/llms.txt
+          echo "Scaffolder verified successfully!"
