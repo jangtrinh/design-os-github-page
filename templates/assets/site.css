@@ -195,3 +195,23 @@ ol.steps .ds-code{margin-top:var(--s-3)}
 .table-scroll{overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:thin}
 .doc-head{margin-bottom:var(--s-12)}
 .doc-nav{display:flex;flex-wrap:wrap;gap:var(--s-2);margin-top:var(--s-24);padding-top:var(--s-12);border-top:1px solid var(--c-gray-300)}
+
+/* ---------------------------------------------------------------- Carousel */
+.carousel-head{padding-block:var(--s-4) 0}
+.carousel-head .viewer-tabs{display:flex;flex-wrap:wrap;gap:var(--s-2);margin:var(--s-8) 0 var(--s-6)}
+.viewer-tabs .ds-tab[aria-pressed="true"]{background:var(--c-gray-1200);color:var(--c-canvas)}
+.carousel-frame{position:relative;margin:var(--s-4) 0}
+.track{display:flex;gap:var(--s-4);margin:0;padding:0;list-style:none;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.track::-webkit-scrollbar{display:none}
+.slide{flex:0 0 100%;scroll-snap-align:start;scroll-snap-stop:always;aspect-ratio:16/9;border:1px solid var(--c-preview-border);border-radius:var(--r-4);background:var(--c-gray-200);overflow:hidden;position:relative}
+.slide img{display:block;width:100%;height:100%;object-fit:cover}
+.carousel-btn{position:absolute;top:50%;transform:translateY(-50%);left:var(--s-8);width:44px;height:44px;min-height:44px;padding:0;border-radius:var(--r-pill);background:color-mix(in srgb,var(--c-canvas) 85%,transparent);backdrop-filter:blur(8px);box-shadow:var(--shadow-custom);display:inline-flex;align-items:center;justify-content:center;cursor:pointer;border:1px solid var(--c-preview-border);z-index:2}
+.carousel-btn[data-side="next"]{left:auto;right:var(--s-8)}
+.carousel-btn .ph{width:var(--icon-20);height:var(--icon-20)}
+.carousel-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:var(--s-2) var(--s-12);padding-block:var(--s-4) 0}
+.carousel-caption{margin:0;color:var(--c-gray-1100);font-size:var(--t-14);max-width:60ch}
+.carousel-caption span{color:var(--c-gray-1200);font-weight:var(--fw-semibold)}
+.carousel-count{color:var(--c-gray-1000);font-family:var(--stack-mono);font-size:var(--t-13);font-style:normal;white-space:nowrap;font-variant-numeric:tabular-nums}
+.track:focus-visible{outline:2px solid var(--c-sky-600);outline-offset:2px}
+@media(prefers-reduced-motion:no-preference){.track{scroll-behavior:smooth}}
+

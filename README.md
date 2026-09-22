@@ -92,14 +92,18 @@ docs/
 
 ## Live Case Studies (design:os Reference Suite)
 
-The 6 production implementations of this architecture:
+![design:os Ecosystem Showcase Banner](images/ecosystem_showcase_master_banner.png)
 
-1. **CLI Tool**: [design-os](https://jangtrinh.github.io/design-os/) — Proposition-first hero, terminal verb registers, workflow automation.
-2. **Desktop Plugin**: [design-os-figma-plugin](https://jangtrinh.github.io/design-os-figma-plugin/) — Live canvas bridge, multi-machine architecture, bidirectional sync.
-3. **Vector Engine**: [design-os-svg-animation](https://jangtrinh.github.io/design-os-svg-animation/) — Deterministic 1080p 60fps video generation, code-driven media.
-4. **3D / CAD**: [design-os-3d-blender](https://jangtrinh.github.io/design-os-3d-blender/) — Cards-first worked builds, embedded Three.js 3D CAD viewer, BOM catalog.
-5. **Hardware**: [design-os-drone-showcase](https://jangtrinh.github.io/design-os-drone-showcase/) — 249g indoor drone, kinematic scroll-scrubbing, hardware teardown.
-6. **Curriculum**: [design-os-pedagogy](https://jangtrinh.github.io/design-os-pedagogy/) — Agent Teacher curriculum tree, evidence-graded student logs.
+The 6 production implementations of this architecture across different repository categories:
+
+| Preview | Repository | Category | Live Showcase & Documentation |
+| :--- | :--- | :--- | :--- |
+| [![CLI](images/eco_showcase_01_design_os_cli.png)](https://jangtrinh.github.io/design-os/) | **[design-os](https://github.com/jangtrinh/design-os)** | CLI Tool | [Live Pages ↗](https://jangtrinh.github.io/design-os/) · Terminal verb registers & automated workflows |
+| [![Figma](images/eco_showcase_02_figma_plugin.png)](https://jangtrinh.github.io/design-os-figma-plugin/) | **[design-os-figma-plugin](https://github.com/jangtrinh/design-os-figma-plugin)** | Desktop Plugin | [Live Pages ↗](https://jangtrinh.github.io/design-os-figma-plugin/) · Live canvas bridge & bidirectional sync |
+| [![SVG](images/eco_showcase_03_svg_animation.png)](https://jangtrinh.github.io/design-os-svg-animation/) | **[design-os-svg-animation](https://github.com/jangtrinh/design-os-svg-animation)** | Vector Engine | [Live Pages ↗](https://jangtrinh.github.io/design-os-svg-animation/) · Deterministic 1080p 60fps video generation |
+| [![3D](images/eco_showcase_04_3d_blender.png)](https://jangtrinh.github.io/design-os-3d-blender/) | **[design-os-3d-blender](https://github.com/jangtrinh/design-os-3d-blender)** | 3D / CAD | [Live Pages ↗](https://jangtrinh.github.io/design-os-3d-blender/) · Three.js CAD viewer & BOM catalog |
+| [![Drone](images/eco_showcase_05_drone_showcase.png)](https://jangtrinh.github.io/design-os-drone-showcase/) | **[design-os-drone-showcase](https://github.com/jangtrinh/design-os-drone-showcase)** | Hardware | [Live Pages ↗](https://jangtrinh.github.io/design-os-drone-showcase/) · 249g drone kinematics & teardown |
+| [![Pedagogy](images/eco_showcase_06_pedagogy.png)](https://jangtrinh.github.io/design-os-pedagogy/) | **[design-os-pedagogy](https://github.com/jangtrinh/design-os-pedagogy)** | Curriculum | [Live Pages ↗](https://jangtrinh.github.io/design-os-pedagogy/) · Agent Teacher curriculum tree & logs |
 
 ---
 
