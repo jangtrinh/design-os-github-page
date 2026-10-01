@@ -17,6 +17,8 @@
 
 - **Zero External Dependencies**: Powered by a standalone Python 3 standard library script. No `npm install`, no `cargo`, no pip packages.
 - **The 9-Tier Information Architecture**: Replaces "AI slop" and walls of text with structured, credible technical storytelling.
+- **Mandatory Gallery & 3D Three.js Preview**: Dedicated visual gallery for all repos; embedded zero-dependency Three.js 3D viewer for 3D/CAD/hardware projects.
+- **README & Pages Synchronization**: Standing parity rule keeping README and Pages in 100% lockstep across every feature and release.
 - **Full Machine-Readability Pack**: Built-in Google SEO, XML Sitemap, `robots.txt`, `llms.txt` (GEO), and Schema.org `FAQPage` (AEO).
 - **Built-in Monetization**: Native Buy Me a Coffee floating widget.
 - **Ecosystem Cross-Sale**: Dedicated cross-promotional section connecting companion repositories.
@@ -71,7 +73,7 @@ docs/
 | **3** | **Honest Comparison** | 4-row advantage register · Honest aside box (`div.aside`) noting where existing alternatives win |
 | **4** | **Install Once** | 3–4 line non-interactive terminal block |
 | **5** | **Safe Use & Loop** | 3 numbered safe steps (`--version`, `status --json`, `run --dry-run`) · 4-row practical loop register |
-| **6** | **Deep Evidence / Demo** | Architecture diagram stage, 3D CAD viewer, or worked-builds responsive card grid |
+| **6** | **Gallery & Deep Evidence** | **Mandatory Gallery Showcase**: Visual card grid (`ul.projects`), demo tiles, or dynamic canvas. **3D Project Rule**: Embedded zero-dependency Three.js 3D viewer (`OrbitControls`, explosion/slice slider, BOM catalog) is mandatory for 3D/CAD/hardware repos. |
 | **7** | **AEO FAQ Engine** | 5 semantic `<details><summary>` Q&As matching Schema.org `FAQPage` word-for-word |
 | **8** | **Ecosystem Section** | `<section id="ecosystem">`: Cross-sale links to author's companion repositories/tools |
 | **9** | **Read Next & Footer** | 3–4 deep-dive documentation links · Minimal 3-tab footer (GitHub, License, Back to top) |
