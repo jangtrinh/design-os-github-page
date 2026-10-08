@@ -1,7 +1,7 @@
 # design-os-github-page
 
-> **Author-grade GitHub Pages marketing & documentation engine for builders and AI coding agents.**  
-> Evolved from the 6 production repositories of the `design:os` ecosystem into a universal, zero-dependency engine.
+> **Author-grade GitHub Presence, Pages & README Documentation Engine for builders and AI coding agents.**  
+> Evolved from the production repositories of the `design:os` ecosystem into a universal, zero-dependency toolchain.
 
 [![CI](https://img.shields.io/github/actions/workflow/status/jangtrinh/design-os-github-page/ci.yml?branch=main&style=for-the-badge&label=CI)](https://github.com/jangtrinh/design-os-github-page/actions)
 [![License: MIT](https://img.shields.io/github/license/jangtrinh/design-os-github-page?style=for-the-badge)](LICENSE)
@@ -13,9 +13,12 @@
 
 ## What It Is
 
-`design-os-github-page` transforms **any public GitHub repository** into an author-grade, fast-indexing, high-converting marketing and documentation site hosted for free on GitHub Pages.
+`design-os-github-page` transforms **any public GitHub repository or developer profile** into an author-grade, fast-indexing, high-converting presence on GitHub — unifying Pages, Profile README, and Repository README.
 
-- **Zero External Dependencies**: Powered by a standalone Python 3 standard library script. No `npm install`, no `cargo`, no pip packages.
+- **Zero External Dependencies**: Powered by standalone Python 3 standard library scripts. No `npm install`, no `cargo`, no pip packages.
+- **Unified GitHub Presence Architecture**: Complete toolchain covering GitHub Pages marketing sites, Profile README, and Repository README.
+- **Formal README Knowledge Base (`knowledge/readme/`)**: 5 UKMC.v1 audited modules detailing Profile README architecture, 9-tier repo structure, 2:1 isometric art direction, CI/CD automation, and anti-patterns.
+- **Verified Production Templates (`templates/`)**: Zero-chroma B&W Profile README template and 9-tier Repo README template ready to deploy.
 - **The 9-Tier Information Architecture**: Replaces "AI slop" and walls of text with structured, credible technical storytelling.
 - **Mandatory Gallery & 3D Three.js Preview**: Dedicated visual gallery for all repos; embedded zero-dependency Three.js 3D viewer for 3D/CAD/hardware projects.
 - **README & Pages Synchronization**: Standing parity rule keeping README and Pages in 100% lockstep across every feature and release.
@@ -61,6 +64,22 @@ docs/
 ├── sitemap.xml           # sitemaps.org XML 0.9 with dynamic lastmod
 └── llms.txt              # llmstxt.org specification for AI search (ChatGPT, Perplexity)
 ```
+
+---
+
+## GitHub README Architecture & Templates
+
+The engine includes the canonical **README Knowledge Base (`knowledge/readme/`)** and verified production templates:
+
+| Module | Location | Purpose |
+| :--- | :--- | :--- |
+| **Profile README Spec** | [`knowledge/readme/profile-readme-architecture.md`](knowledge/readme/profile-readme-architecture.md) | Author-grade structure, hero ratio, B&W metrics, and zero-emoji discipline |
+| **Repository README Spec** | [`knowledge/readme/repository-readme-architecture.md`](knowledge/readme/repository-readme-architecture.md) | 9-tier technical information architecture for libraries and CLIs |
+| **Visual & Art Direction** | [`knowledge/readme/readme-visual-craft.md`](knowledge/readme/readme-visual-craft.md) | 2:1 isometric technical illustration standards, typography, and dark/light assets |
+| **Dynamic Automation** | [`knowledge/readme/readme-dynamic-automation.md`](knowledge/readme/readme-dynamic-automation.md) | GitHub Actions snake animation, SVG telemetry, and cache-busting workflows |
+| **Anti-Patterns Catalog** | [`knowledge/readme/readme-anti-patterns.md`](knowledge/readme/readme-anti-patterns.md) | The 10 prohibited anti-patterns (zebra striping, emoji inflation, fake stats) |
+| **Profile Template** | [`templates/profile-readme.template.md`](templates/profile-readme.template.md) | Production-ready zero-chroma B&W Profile README template |
+| **Repository Template** | [`templates/repository-readme.template.md`](templates/repository-readme.template.md) | 9-tier author-grade repository README template |
 
 ---
 

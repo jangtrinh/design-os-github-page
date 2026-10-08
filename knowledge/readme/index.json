@@ -1,0 +1,27 @@
+[
+  {
+    "id": "readme-dynamic-automation",
+    "path": "readme-dynamic-automation.md",
+    "sha256": "ef0cf4ee2d7120e098372358d05bdf5289bcdfc813d976ea08ca89c6c5cd040e"
+  },
+  {
+    "id": "readme-visual-craft",
+    "path": "readme-visual-craft.md",
+    "sha256": "ec7d846becbe0e05cdb95951ba1e3e5a438b5c47313e6b123df8350040ce0443"
+  },
+  {
+    "id": "repository-readme-architecture",
+    "path": "repository-readme-architecture.md",
+    "sha256": "9a406589fc81014af953a8703d29fd61e53880c95db9033d2b19d1f788725c27"
+  },
+  {
+    "id": "profile-readme-architecture",
+    "path": "profile-readme-architecture.md",
+    "sha256": "c2325909a8f76f2179487fd54d367a64ff06bf62e5a5f86503886af3938fddc4"
+  },
+  {
+    "id": "readme-anti-patterns",
+    "path": "readme-anti-patterns.md",
+    "sha256": "3ca37e0a246f382d432ad84beecee91786b976e5b69c399380f01210ff1261b4"
+  }
+]
