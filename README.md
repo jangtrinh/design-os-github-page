@@ -78,6 +78,7 @@ The engine includes the canonical **README Knowledge Base (`knowledge/readme/`)*
 | **Visual & Art Direction** | [`knowledge/readme/readme-visual-craft.md`](knowledge/readme/readme-visual-craft.md) | 2:1 isometric technical illustration standards, typography, and dark/light assets |
 | **Dynamic Automation** | [`knowledge/readme/readme-dynamic-automation.md`](knowledge/readme/readme-dynamic-automation.md) | GitHub Actions snake animation, SVG telemetry, and cache-busting workflows |
 | **Anti-Patterns Catalog** | [`knowledge/readme/readme-anti-patterns.md`](knowledge/readme/readme-anti-patterns.md) | The 10 prohibited anti-patterns (zebra striping, emoji inflation, fake stats) |
+| **SEO / AEO / GEO Harness** | [`knowledge/readme/readme-seo-aeo-geo-harness.md`](knowledge/readme/readme-seo-aeo-geo-harness.md) | 5-layer machine discoverability workflow & CLI gate (`scripts/seo-aeo-geo-harness.py`) |
 | **Profile Template** | [`templates/profile-readme.template.md`](templates/profile-readme.template.md) | Production-ready zero-chroma B&W Profile README template |
 | **Repository Template** | [`templates/repository-readme.template.md`](templates/repository-readme.template.md) | 9-tier author-grade repository README template |
 

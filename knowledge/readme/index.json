@@ -23,5 +23,10 @@
     "id": "readme-anti-patterns",
     "path": "readme-anti-patterns.md",
     "sha256": "3ca37e0a246f382d432ad84beecee91786b976e5b69c399380f01210ff1261b4"
+  },
+  {
+    "id": "readme-seo-aeo-geo-harness",
+    "path": "readme-seo-aeo-geo-harness.md",
+    "sha256": "f6b12e778026a997c63484c9e18d5a2069a380e5eeb5843848cfd5be32c6d2c4"
   }
 ]
