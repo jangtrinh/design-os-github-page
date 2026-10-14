@@ -1,0 +1,43 @@
+{
+  "name": "design-os-github-page",
+  "description": "Zero-dependency 9-tier GitHub Pages marketing scaffolder, AI-Ready repository delivery generator, and 10-gate SEO / AEO / GEO verification harness.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Jang Trinh",
+    "url": "https://github.com/jangtrinh"
+  },
+  "homepage": "https://jangtrinh.github.io/design-os-github-page/",
+  "repository": "https://github.com/jangtrinh/design-os-github-page",
+  "license": "MIT",
+  "keywords": [
+    "github-pages",
+    "readme-template",
+    "seo",
+    "aeo",
+    "geo",
+    "llms-txt",
+    "claude-plugin",
+    "design-os"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "DESIGN:OS GitHub Pages Engine",
+    "shortDescription": "Zero-dependency 9-tier GitHub Pages marketing scaffolder, AI-Ready repository delivery generator, and 10-gate SEO / AEO / GEO verification harness.",
+    "longDescription": "Turn any open-source repository, developer profile, or organization into a high-converting editorial publication with JSON-LD knowledge graphs, `llms.txt` discovery, multi-host agent plugin manifests, and 12-section `README.md` blueprints.",
+    "developerName": "DESIGN:OS",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://jangtrinh.github.io/design-os-github-page/",
+    "privacyPolicyURL": "https://github.com/jangtrinh/design-os-github-page/blob/main/PRIVACY.md",
+    "defaultPrompt": [
+      "Scaffold a 9-tier editorial GitHub Pages site in docs/ with JSON-LD SoftwareSourceCode + FAQPage schemas and llms.txt.",
+      "Upgrade this repository to the DESIGN:OS 12-section AI-Ready README and generate all plugin manifests and /doctor checks.",
+      "Run the 10-gate SEO, AEO, and GEO verification harness across our ecosystem and fix any missing canonical or OG tags."
+    ],
+    "brandColor": "#202020",
+    "logo": "./docs/images/cover.png"
+  }
+}

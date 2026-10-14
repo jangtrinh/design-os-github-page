@@ -1,11 +1,11 @@
 ---
 id: repository-readme-architecture
-title: "Repository README Architecture & Open-Source Product Blueprint"
+title: "Repository README Architecture & AI-Ready Open-Source Delivery Blueprint"
 domain: "open-source-documentation"
-description: "Production framework for repository READMEs incorporating the 3-second hook, badge hierarchy, copy-paste quickstart, architecture diagrams, and machine discoverability."
-when: ["repo-readme", "open-source", "project-docs", "readme-blueprint", "product-readme"]
+description: "Production framework for AI-ready repository delivery and 12-section editorial READMEs incorporating multi-agent plugin manifests, /doctor diagnostics, progressive context disclosure, and 5-tab GitHub trust governance."
+when: ["repo-readme", "open-source", "project-docs", "readme-blueprint", "product-readme", "ai-ready-repo"]
 trust_tier: "verified"
-version: "1.0.0"
+version: "2.0.0"
 source_attribution:
   uri: "https://opensource.guide/starting-a-project/#writing-a-readme"
   modality: "web"
@@ -16,123 +16,95 @@ quarantine:
   is_external_untrusted: false
 ---
 
-# Repository README Architecture & Open-Source Product Blueprint
+# Repository README Architecture & AI-Ready Open-Source Delivery Blueprint
 
 ## Purpose
-Guide developers and AI coding agents in structuring repository READMEs that immediately communicate value, reduce time-to-first-run under 60 seconds, and facilitate AI agent indexing.
+Guide developers and AI coding agents in shipping AI-ready open-source repositories and 12-section editorial `README.md` documents that convert human readers in under 3 seconds, install cleanly into Claude Code, Codex, Gemini CLI, Antigravity, and OpenCode, and pass deterministic verification gates.
 
 ## Mental Model
 ```mermaid
 flowchart TD
-    Hook["The 3-Second Hook: Title + Elevator Pitch + Badges"]
-    Hero["Hero Visual: Architecture Illustration or Terminal Demo"]
-    Problem["Problem & Value Proposition"]
-    Quickstart["Zero-Friction Quickstart (< 60s to Run)"]
-    Arch["Architecture Diagram & Mental Model"]
-    API["CLI / API Reference & Config Table"]
-    Ecosystem["Ecosystem, Contributing, License & llms.txt"]
-    Hook --> Hero --> Problem --> Quickstart --> Arch --> API --> Ecosystem
+    Hook["1. Top Fold: Title + Bold Hook + 2:1 B&W Hero + #202020 Badges + 6-Anchor Jump Nav"]
+    Why["2. Why This Exists: Narrative Contrast + 5-Row Before/After Table"]
+    Quick["3. Quickstart: 1. Install · 2. Ask in Plain English · 3. /doctor Self-Check"]
+    Makes["4. What It Makes: Visual Specimens + Prompt Captions + Deliverable Matrix"]
+    Install["5. Multi-Host Installation: Claude Code · Codex · Gemini/Antigravity · OpenCode"]
+    Cookbook["6-7. Prompt Cookbook (docs/cookbook.md) + Commands & /doctor Diagnostics"]
+    Arch["8-9. How It Works + 'What Loads When' Context Budget Table + Annotated File Tree"]
+    Bar["10-12. 'It's Working If...' + 'When Not to Use' + 13-Engine Ecosystem + Trust Governance"]
+    Hook --> Why --> Quick --> Makes --> Install --> Cookbook --> Arch --> Bar
 ```
 
 ## When to Use / When NOT
 ### ALLOWED (When to Use)
-- Writing or updating the root README.md for an open-source library, CLI tool, framework, or SaaS project.
-- Preparing a repository for public release, open-source security audits, or Hacker News / Product Hunt launches.
-- Optimizing documentation for consumption by LLM coding agents via `llms.txt` and machine schemas.
+- Writing or upgrading the root `README.md` and AI-ready delivery scaffolding for any `DESIGN:OS` or `EaseStart` repository.
+- Preparing an open-source CLI, SDK, or agent skill repository for multi-host AI agent marketplaces (`.claude-plugin`, `.codex-plugin`, `.agents/plugins`, `.factory-plugin`).
+- Auditing repository trust governance so GitHub activates the 5-tab top bar (`README | Code of conduct | Contributing | MIT license | Security`).
 
 ### NOT ALLOWED (When NOT to Use)
-- Personal profile READMEs (use `profile-readme-architecture`).
-- Ephemeral branch notes, internal scratchpads, or raw commit logs.
+- Personal profile READMEs (`<username>/<username>` — use `profile-readme-architecture`).
+- Organization profile READMEs (`.github/profile/README.md` — use `organization-readme-architecture`).
 
 ## Core Knowledge Content
 <!-- ease:source ref="https://opensource.guide/starting-a-project/#writing-a-readme" sha256="9a82b7c61e05d2f4418a09e3e782bc419d20c541793818e9a1120f283d7120a1" captured="2026-10" -->
-### 1. The 3-Second Hook Rule
 
-Every open-source or commercial repository README must communicate its entire value proposition before the reader scrolls below the fold:
+### 1. The AI-Ready Repository Delivery Contract (5 Mandatory Layers)
 
-1. **Title & Logo**: Bold, clean project name with a self-describing 1-word tagline.
-2. **Badge Strip**: Maximum 5-6 status badges in an exact hierarchy:
-   - Build / CI Status (`passing`)
-   - Release Version / NPM / PyPI
-   - License (`MIT` / `Apache-2.0`)
-   - Test Coverage (`95%+`)
-   - Documentation / Live Demo
-3. **Elevator Pitch**: A single blockquote (`> ...`) summarizing what the project does, whom it is for, and its primary differentiator.
-4. **Hero Visual**: A technical architecture diagram, terminal GIF recording, or seated mechanical asset centered at Retina 2x resolution.
+A high-converting `README.md` must never point to vaporware. Every `DESIGN:OS` delivery repository must ship these 5 concrete file layers alongside its `README.md`:
 
----
-
-### 2. Standard 12-Section Architecture Blueprint
-
-```markdown
-# Project Name (`package-name`)
-
-[![CI](https://github.com/org/repo/actions/workflows/ci.yml/badge.svg)](https://github.com/org/repo/actions)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/pypi/v/package-name.svg)](https://pypi.org/project/package-name)
-
-> **Universal High-Throughput Task Orchestration Engine for AI Coding Agents.**
-> Deterministic DAG scheduling, sub-millisecond dispatch, and formal stopping gates.
-
-<p align="center">
-  <img src="./assets/architecture.png" alt="Architecture Diagram" width="760"/>
-</p>
+1. **Multi-Host Plugin Manifests (`D1_PLUGIN_MANIFESTS`)**:
+   - `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` (enables `/plugin marketplace add <owner>/<repo>`).
+   - `.codex-plugin/plugin.json` (with `interface.defaultPrompt`, `brandColor: "#202020"`, `privacyPolicyURL`, and `skills: "./skills/"`).
+   - `.agents/plugins/marketplace.json` (universal local agent marketplace index).
+   - `.factory-plugin/plugin.json` and `.factory-plugin/marketplace.json`.
+2. **Canonical Skill & `/doctor` Diagnostics (`D2_SKILL_AND_DOCTOR`)**:
+   - `skills/<slug>/SKILL.md` with YAML frontmatter (`name`, `description`) and progressive context disclosure rules.
+   - `commands/doctor.md` and `prompts/doctor.md` providing a read-only `/doctor` diagnostic check.
+   - `scripts/self_check.py` providing a zero-dependency CLI verification gate (`python3 scripts/self_check.py`).
+3. **5-Tab GitHub Trust & Governance Suite (`D3_TRUST_GOVERNANCE`)**:
+   - `PRIVACY.md` (explicit zero-telemetry, 100% local execution guarantee).
+   - `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `CHANGELOG.md`, `LICENSE` (unlocks GitHub's native 5-tab header bar).
+   - `docs/cookbook.md` (copy-paste prompt recipes by job) and root `llms.txt` (GEO / LLM discovery index).
+4. **12-Section Editorial README (`D4_README_12_SECTIONS`)**:
+   - Follows `templates/repository-readme.template.md` with all 12 mandatory sections.
+5. **Verified Local Visual Assets (`D5_IMAGE_PATHS_VALID`)**:
+   - Every local `<img src="...">` and Markdown image link in `README.md` resolves to a tracked file on disk (`assets/cover.png` or `docs/images/cover.png` in 2:1 axonometric isometric B&W line art).
 
 ---
 
-## 🌟 The Problem & Solution
-- **The Problem**: Traditional pipelines fail silently when agents hit token limits.
-- **The Solution**: Discrete file-backed ledgers and formal epistemic gates.
+### 2. The 12-Section README Blueprint
 
-## ⚡ Quickstart (< 60 seconds)
-```bash
-# 1. Install via package manager
-pip install package-name
-
-# 2. Initialize project configuration
-package-name init
-
-# 3. Run validation test
-package-name run --verify
-```
-
-## 🏛️ Architecture & Data Flow
-```mermaid
-graph LR
-    Input[Task Input] --> Planner[Planner Agent]
-    Planner --> DAG[DAG Engine]
-    DAG --> Workers[Parallel Workers]
-```
-
-## 🛠️ CLI / API Reference
-| Flag | Type | Default | Description |
-| :--- | :--- | :--- | :--- |
-| `--config` | `string` | `./config.json` | Path to orchestrator config |
-| `--concurrency` | `int` | `4` | Max parallel worker threads |
-| `--dry-run` | `bool` | `false` | Simulate execution without writes |
-
-## 🧪 Testing
-```bash
-pytest tests/ -v --cov=package_name
-```
-
-## 📜 License
-MIT License. See [LICENSE](./LICENSE) for details.
-```
+| Section | Heading | Mandatory Elements |
+| :--- | :--- | :--- |
+| **1** | `# <Title>` (Top Fold) | 1-sentence bold hook, 2:1 B&W hero `<img width="840">`, `#202020` flat-square badges, 6-anchor jump nav (`Quickstart · What it makes · Install · How it works · Commands · Limits`) |
+| **2** | `## Why this exists` | Problem statement + 5-row comparison table (`Dimension \| Generic AI / Manual Workflow \| <Repo> (DESIGN:OS)`) |
+| **3** | `## Quickstart` | `### 1. Install`, `### 2. Ask in plain English` (3 blockquote prompts), `### 3. Verify your setup` (`python3 scripts/self_check.py`) |
+| **4** | `## What it makes` | Visual output showcase with `<sub>Prompt: "..."</sub>` caption + deliverable mode table |
+| **5** | `## Installation` | Multi-host tabs/headings for Claude Code, OpenAI Codex, Gemini CLI & Antigravity, OpenCode/Cursor + `<details><summary>Verify or uninstall</summary>` |
+| **6** | `## Usage & Prompt Cookbook` | Copy-paste prompts grouped by job + link to `docs/cookbook.md` |
+| **7** | `## Commands & Diagnostics` | Table covering `/doctor`, `python3 scripts/self_check.py`, and repo-specific CLI commands |
+| **8** | `## How it works` | Numbered pipeline + ASCII/Mermaid flow + **`### What loads when`** progressive context disclosure table |
+| **9** | `## File structure` | Annotated directory tree showing all plugin manifests, `skills/`, `commands/doctor.md`, `scripts/self_check.py`, and governance files |
+| **10** | `## Quality bar & Limitations` | **`### It's working if...`** (observable pass criteria) + **`### When not to use`** (honest boundaries) |
+| **11** | `## DESIGN:OS Ecosystem` | Cross-linked 13-engine ecosystem table (`Engine \| Live Docs \| Repository \| Layer`) |
+| **12** | `## Contributing, Governance & License` | Links to `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`, `PRIVACY.md`, `CHANGELOG.md`, `llms.txt`, `LICENSE`, and Buy Me a Coffee |
 
 ---
 
-### 3. Agent & Machine Discoverability (AEO)
+### 3. Automated Scaffolding & Verification CLI
 
-Modern software repositories are read as much by AI coding agents (Claude Code, Codex, Antigravity) as by humans:
-- Provide an `llms.txt` file at repo root following the [llmstxt.org](https://llmstxt.org) standard.
-- Include machine routing tags in frontmatter.
-- Maintain an `AGENTS.md` specifying execution boundaries and testing expectations.
-
+- **Scaffold / Backfill a Repository**:
+  ```bash
+  python3 scripts/scaffold-repo-delivery.py --repo-root /path/to/repo
+  ```
+- **Verify All 5 Gates (`D1`–`D5`)**:
+  ```bash
+  python3 scripts/verify-repo-delivery.py /path/to/repo
+  ```
 
 ## Failure Modes (Mandatory)
-1. **Zero-Context Prose Walls**: Writing long philosophical preambles before showing what the library does or how to install it.
-1. **Missing Prerequisites Trap**: Documenting 'npm start' without specifying Node.js version requirements or required system packages.
-1. **Ghost Badges**: Embedding shields.io badges pointing to broken endpoints, deprecated services, or failing build statuses.
-1. **Undocumented Environment Variables**: Requiring hidden .env files or secret tokens without documenting them in the README.
-1. **Missing or Ambiguous License**: Neglecting to include an SPDX-compliant LICENSE file, blocking enterprise legal compliance.
+1. **README-Only Vaporware**: Documenting `/plugin marketplace add`, `/doctor`, or `PRIVACY.md` in `README.md` without committing the actual `.claude-plugin/`, `commands/doctor.md`, and `PRIVACY.md` files to the repository.
+2. **Context-Window Bloating**: Loading entire reference libraries upfront instead of documenting progressive disclosure in a `### What loads when` table.
+3. **Rainbow Badge Pollution**: Mixing default bright blue/green/orange shields.io badges instead of the unified `#202020` / `#444444` flat-square monochrome badge system.
+4. **Promptless Galleries**: Showing screenshots or diagrams without the exact `<sub>Prompt: "..."</sub>` or CLI command that produced them.
+5. **Missing Anti-Scope Boundaries**: Omitting `### It's working if...` and `### When not to use`, leaving human developers and AI agents unable to judge when the tool is appropriate or whether setup succeeded.
