@@ -19,6 +19,7 @@ import sys
 import urllib.request
 import urllib.error
 from pathlib import Path
+import html as html_lib
 from typing import Any, Dict, List, Tuple
 
 
@@ -189,7 +190,7 @@ def render_html_report(results: List[Dict[str, Any]], out_path: Path) -> None:
     for r in results:
         for g in r["gates"]:
             status_label = "PASS" if g["passed"] else "FAIL"
-            detail_html = "<br/>".join(g["issues"]) if g["issues"] else g["summary"]
+            detail_html = "<br/>".join(html_lib.escape(x) for x in g["issues"]) if g["issues"] else html_lib.escape(g["summary"])
             rows_html += f"""
             <tr>
               <td><b>{r['target']}</b></td>
