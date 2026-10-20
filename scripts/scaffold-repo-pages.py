@@ -46,7 +46,7 @@ def main():
     parser.add_argument("--repo", required=True, help="Repository name (e.g. my-tool)")
     parser.add_argument("--name", help="Display name of the tool (default: title-cased repo)")
     parser.add_argument("--tagline", help="Proposition sentence for the hero h1 (e.g. 'Build UI faster with code.')")
-    parser.add_argument("--category", default="Open Source", help="Category or ecosystem eyebrow (default: Open Source)")
+    parser.add_argument("--category", default="Source Available", help="Category or ecosystem eyebrow (default: Source Available)")
     parser.add_argument("--desc", help="Meta description under 160 characters for SEO/AEO")
     parser.add_argument("--accent", default=DEFAULT_ACCENT, help=f"Hex accent color (default: {DEFAULT_ACCENT})")
     parser.add_argument("--bmc", default="", help="Buy Me A Coffee ID (e.g. jangtrinh). Leave empty to omit.")
@@ -62,7 +62,7 @@ def main():
     name = args.name.strip() if args.name else repo.replace("-", " ").title()
     category = args.category.strip()
     tagline = args.tagline.strip() if args.tagline else f"{name} — High-performance, deterministic tool for developers."
-    desc = args.desc.strip() if args.desc else f"{name}: open-source, production-ready toolchain built for modern engineering teams."
+    desc = args.desc.strip() if args.desc else f"{name}: source-available, production-ready toolchain built for modern engineering teams."
     accent = args.accent.strip()
     bmc_id = args.bmc.strip()
     wordmark = args.wordmark.strip() if args.wordmark else owner.upper()
