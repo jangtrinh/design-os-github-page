@@ -510,7 +510,7 @@ def build_plugin_manifests(root: Path, slug: str, cfg: dict, preserve_claude_age
         },
         "homepage": f"https://jangtrinh.github.io/{slug}/",
         "repository": f"https://github.com/jangtrinh/{slug}",
-        "license": "MIT",
+        "license": "LicenseRef-PolyForm-Shield-1.0.0",
         "keywords": cfg["keywords"],
     }
     base_marketplace = {
@@ -753,14 +753,14 @@ if __name__ == "__main__":
 def write_governance_and_cookbook(root: Path, slug: str, skill_slug: str, cfg: dict) -> None:
     privacy_md = f"""# Privacy Policy (`{slug}`)
 
-`{slug}` (`{cfg['display_name']}`) is a local-first open-source engineering tool and AI agent skill in the **DESIGN:OS** ecosystem.
+`{slug}` (`{cfg['display_name']}`) is a local-first, source-available engineering tool and AI agent skill in the **DESIGN:OS** ecosystem.
 
 ## Zero Telemetry Guarantee
 
 - **No network calls by the skill or CLI**: `{slug}` does not phone home, collect analytics, or transmit source code, prompts, or generated artifacts to any external server.
 - **No third-party tracking**: There are no embedded telemetry beacons, crash reporters, or usage trackers in `skills/`, `scripts/`, or plugin manifests.
 - **100% local execution**: All file reads, validations, and builds happen inside your local workspace and under your active AI coding agent's permission model.
-- **Auditable source**: Every script and prompt in this repository is plain-text Markdown, Python, or JavaScript/Swift under the [MIT License](LICENSE).
+- **Auditable source**: Every script and prompt in this repository is plain-text Markdown, Python, or JavaScript/Swift under the [PolyForm Shield License 1.0.0](LICENSE).
 
 ## Contact
 
@@ -862,29 +862,11 @@ All notable changes to `{slug}` are documented in this file.
 
     license_path = root / "LICENSE"
     if not license_path.is_file():
+        # DESIGN:OS repos ship under PolyForm Shield 1.0.0: free to use and modify,
+        # no resale and no competing products. The license text lives in templates/.
+        shield_text = (Path(__file__).resolve().parents[1] / "templates" / "LICENSE-polyform-shield-1.0.0.md").read_text(encoding="utf-8")
         license_path.write_text(
-            """MIT License
-
-Copyright (c) 2026 Jang Trinh (DESIGN:OS)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-""",
+            "Required Notice: Copyright (c) 2026 Jang Trinh (https://github.com/jangtrinh)\n\n" + shield_text,
             encoding="utf-8",
         )
 
@@ -984,7 +966,7 @@ def render_readme(slug: str, skill_slug: str, cfg: dict) -> str:
 </p>
 
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-202020?style=flat-square&labelColor=202020&color=444444" alt="MIT License"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-PolyForm_Shield_1.0.0-202020?style=flat-square&labelColor=202020&color=444444" alt="PolyForm Shield 1.0.0 License"></a>
   <img src="https://img.shields.io/badge/Claude_Code_%C2%B7_Codex_%C2%B7_Gemini_%C2%B7_Antigravity-skill-202020?style=flat-square&labelColor=202020&color=444444" alt="Compatible agents">
   <a href="commands/doctor.md"><img src="https://img.shields.io/badge/diagnostics-%2Fdoctor-202020?style=flat-square&labelColor=202020&color=444444" alt="Doctor command"></a>
   <a href="https://jangtrinh.github.io/{slug}/"><img src="https://img.shields.io/badge/live_docs-GitHub_Pages-202020?style=flat-square&labelColor=202020&color=444444" alt="Live GitHub Pages"></a>
@@ -1238,7 +1220,7 @@ User Prompt / CLI Invocation
 ├── CODE_OF_CONDUCT.md              # Contributor Covenant code of conduct
 ├── CHANGELOG.md                    # Release history
 ├── llms.txt                        # Root LLM indexing manifest
-├── LICENSE                         # MIT License
+├── LICENSE                         # PolyForm Shield 1.0.0
 └── README.md
 ```
 
@@ -1263,7 +1245,7 @@ User Prompt / CLI Invocation
 
 ## DESIGN:OS Ecosystem
 
-`{slug}` is one of the 13 open-source engines in the **`DESIGN:OS`** ecosystem:
+`{slug}` is one of the 13 source-available engines in the **`DESIGN:OS`** ecosystem:
 
 {ECOSYSTEM_TABLE}
 
@@ -1275,7 +1257,7 @@ User Prompt / CLI Invocation
 - **Code of Conduct**: Governed by [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).
 - **Security & Privacy**: Zero telemetry — see [`SECURITY.md`](SECURITY.md) and [`PRIVACY.md`](PRIVACY.md).
 - **Changelog & LLM Index**: Track releases in [`CHANGELOG.md`](CHANGELOG.md) and machine-readable index in [`llms.txt`](llms.txt).
-- **License**: [MIT](LICENSE) © [Jang Trinh](https://github.com/jangtrinh).
+- **License**: [PolyForm Shield 1.0.0](LICENSE) © [Jang Trinh](https://github.com/jangtrinh). Free to use and modify, including for paid client work; you may not resell it or build a competing product from it.
 
 ---
 
